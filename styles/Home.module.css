@@ -1,0 +1,63 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  font-family: Helvetica, Arial, sans-serif;
+  gap: 4rem;
+}
+
+.top{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightSide{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7rem;
+  padding: 0;
+}
+
+.rightSide > h2{
+  font-weight: 100;
+  border: 0.5px solid var(--darkgray);
+  padding: 30px 75px;
+}
+
+.signup{
+  text-decoration: none;
+  color: var(--lightblue);
+  font-weight: bold;
+}
+
+.rightSide > p {
+  font-size: 0.9rem;
+}
+
+.appLinks{
+  display: flex;
+  gap: 7px;
+}
+
+/*Mobile*/
+@media (max-width: 700px){
+  .leftSide {
+    display: none;
+  }
+  .rightSide > h2 {
+    border: none;
+  }
+}
+
+/*Tablet*/
+@media (min-width: 701px) and (max-width: 1120px){
+  .leftSide {
+    display: none;
+  }
+}
